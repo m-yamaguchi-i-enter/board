@@ -1,8 +1,8 @@
-<header class="mb-4">
+<header class="mb-4 bg-gray">
     <nav class="navbar bg-neutral text-neutral-content">
         {{-- トップページへのリンク --}}
         <div class="flex-1">
-            <h1><a class="btn btn-ghost normal-case text-xl" href="/">Microposts</a></h1>
+            <h1><a class="btn btn-ghost normal-case text-xl " href="/">Board</a></h1>
         </div>
 
         <div class="flex-none">
@@ -14,7 +14,7 @@
                 <div class="dropdown dropdown-end">
                     <button type="button" tabindex="0" class="btn btn-ghost normal-case font-normal lg:hidden">
                         @if (Auth::check())
-                            {{ Auth::user()->name }}
+                            {{ Auth::user()->user_name }}
                         @else
                             Guest
                         @endif
